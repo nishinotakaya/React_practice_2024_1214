@@ -1,0 +1,155 @@
+/* 全体的な背景とコンテナスタイル */
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+}
+
+.container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+  backdrop-filter: blur(4px);
+  margin-top: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/* テーブルスタイル */
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.thead-dark {
+  background: linear-gradient(45deg, #2c3e50, #3498db);
+  color: white;
+}
+
+.table tbody tr:hover {
+  background-color: #f0f7ff;
+  transform: scale(1.01);
+  transition: all 0.2s ease;
+}
+
+/* ボタンスタイル */
+.btn-outline-dark {
+  border: 2px solid #2c3e50;
+  color: #2c3e50;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+  background-color: #2c3e50;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-danger {
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e74c3c;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.2);
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.875rem;
+  border-radius: 5px;
+}
+
+/* ヘッダースタイル */
+h1 {
+  color: #2c3e50;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ユーティリティクラス */
+.ml-auto {
+  margin-left: auto;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+/* アニメーション効果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.table {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 日付とIDのスタイル */
+td:first-child,
+td:nth-child(4),
+td:nth-child(5) {
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+/* タイトルのスタイル */
+td:nth-child(2) {
+  font-weight: bold;
+  color: #34495e;
+}
+
+/* 作成者名のスタイル */
+td:nth-child(3) {
+  color: #2980b9;
+}
+
+/* ローディング表示のスタイル */
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+/* テーブルセルの内部余白調整 */
+.table td,
+.table th {
+  padding: 1rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* ヘッダーの配置調整 */
+.d-flex.align-items-center.mb-4 {
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+}
+
+/* ページネーションの配置調整 */
+.d-flex.justify-content-center.mt-4 {
+  max-width: 1100px;
+  margin: 1.5rem auto 0;
+}
